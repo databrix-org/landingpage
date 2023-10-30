@@ -71,3 +71,28 @@ export function StreamifyLogo(
     </svg>
   );
 }
+
+export function VotanLogo(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>,
+) {
+  return (
+    <svg
+      viewBox="0 0 250 250"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <circle
+        cx="125"
+        cy="125"
+        r="122.5"
+        stroke="currentColor"
+        stroke-width="5"
+      />
+      <path
+        d="M116.658 207.2L75.2578 90.4C70.6578 77.4 67.8578 72.2 63.2578 69.2C61.0578 67.6 59.8578 67.2 53.0578 66.2V61.4H105.458V66.2C99.2578 66.6 97.8578 66.8 95.2578 67.8C92.2578 68.8 90.4578 71.2 90.4578 74.6C90.4578 77.6 91.6578 82.2 94.6578 91L128.258 187.8L161.858 93C164.858 84.4 165.858 80.4 165.858 76.6C165.858 69.6 161.458 67 148.458 66.2V61.4H195.858V66.2C189.058 67 186.058 68.2 182.458 71.6C178.258 75.4 174.058 82.8 170.058 93.6L128.658 207.2H116.658Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
