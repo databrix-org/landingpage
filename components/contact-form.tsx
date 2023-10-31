@@ -3,8 +3,7 @@ import React from 'react'
 
 export default function ContactForm() {
   return (
-    <div>
-        <form action="#" method="POST" className="lg:flex-auto w-full">
+        <form action="#" method="POST" className="lg:flex-auto w-full z-10">
             <div className="relative font-normal text-[30px] md:text-[30px] leading-10 font-inter text-[#1E2B3A]">
                 Bleiben Sie informiert über unsere <br />
                 <span className="text-[#407BBF]">Warteliste</span>
@@ -79,6 +78,5 @@ export default function ContactForm() {
               .
             </p>
           </form>
-    </div>
   )
 }

@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { gradient } from "@/components/Gradient";
 import { useEffect } from "react";
 import { GithubIcon } from "@/components/icons";
-import { DHBWLogo, StreamifyLogo, VotanLogo } from "@/components/logos";
+import { DHBWLogo, VotanLogo } from "@/components/logos";
 
 export default function HeroSection() {
   useEffect(() => {
@@ -194,14 +194,15 @@ export default function HeroSection() {
           data-transition-in
           className="z-50 fixed top-0 right-[-2px] w-[80%] md:w-1/2 h-screen bg-[#c3e4ff]"
         ></motion.canvas>
-        <div className="h-[60px] bg-[#1D2B3A] fixed bottom-0 z-20 w-full flex flex-row items-center justify-start gap-8 px-16">
-          {/* // justify-evenly */}
-          <p className="text-white/80 text-base md:text-lg font-semibold md:leading-[60px] whitespace-nowrap flex flex-row">
-            Created by
-          </p>
-          <DHBWLogo className="h-8 opacity-80 text-white" />
-          <VotanLogo className="h-8 opacity-80 text-white" />
-        </div>
+      </div>
+
+      <div className="h-[60px] bg-[#1D2B3A] fixed bottom-0 z-40 w-full flex flex-row items-center justify-start gap-8 px-16">
+        {/* // justify-evenly */}
+        <p className="text-white/80 text-base md:text-lg font-semibold md:leading-[60px] whitespace-nowrap flex flex-row">
+          Created by
+        </p>
+        <DHBWLogo className="h-8 opacity-80 text-white" />
+        <VotanLogo className="h-8 opacity-80 text-white" />
       </div>
     </AnimatePresence>
   );
