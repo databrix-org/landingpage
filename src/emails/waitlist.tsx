@@ -33,7 +33,7 @@ export const WaitlistEmail = ({ firstName, lastName }: WaitlistEmailProps) => (
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`${baseUrl}/static/databrix-logo.svg`}
+          src="https://assets.streamify.dev/logo/databrix/databrix-logo.svg"
           width="170"
           height="50"
           alt="Databrix"
@@ -44,7 +44,7 @@ export const WaitlistEmail = ({ firstName, lastName }: WaitlistEmailProps) => (
           Hallo {firstName} {lastName}
         </Text>
         <Text style={paragraph}>
-          Wir freuen uns über Ihr Interesse zu Databrix. Sie erhalten
+          Wir freuen uns über Ihr Interesse an Databrix. Sie erhalten
           kontinuierlich Neuigkeiten zum Projektverlauf und dem Start der
           Plattform.
         </Text>
