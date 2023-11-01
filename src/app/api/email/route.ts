@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import WelcomeEmail from "@/src/emails/welcome";
+import WaitlistEmail from "@/src/emails/waitlist";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -12,7 +13,7 @@ export async function POST(request: Request) {
       from: process.env.MAIL_FROM || "",
       to: email,
       subject: "Warteliste für Databrix",
-      react: WelcomeEmail({
+      react: WaitlistEmail({
         firstName,
         lastName,
       }),
