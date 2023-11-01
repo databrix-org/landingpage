@@ -55,7 +55,7 @@ const Waitlist = () => {
 
   return (
     <form onSubmit={handleOnSubmit} className="lg:flex-auto w-full z-10">
-      <div className="relative font-semibold text-[30px] md:text-[30px] text-[#1E2B3A]">
+      <div className="relative md:font-semibold font-medium text-[30px] md:text-[30px] text-[#1E2B3A]">
         Bleiben Sie informiert über unsere&nbsp;
         <span className="text-[#407BBF]">Warteliste.</span>
       </div>
@@ -111,17 +111,17 @@ const Waitlist = () => {
       <div className="mt-10">
         <button
           type="submit"
-          className="group rounded-full pl-[8px] w-full pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2 active:scale-95 scale-100 duration-75"
+          className="group rounded-full pl-[8px] h-10 w-full pr-4 py-2 text-[13px] font-medium transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2 active:scale-95 scale-100 duration-75"
           style={{
             boxShadow:
               "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
           }}
         >
-          Newsletter abonnieren
+          Zugang anfragen
         </button>
       </div>
       <p className="mt-4 text-sm leading-6 text-[#1E2B3A] text-center sm:text-left">
-        Durch eintragen in die Warteliste akzeptieren Sie unseren&nbsp;
+        Durch Eintragung in die Warteliste akzeptieren Sie unsere&nbsp;
         <Link
           href="/privacy-policy"
           target="_blank"

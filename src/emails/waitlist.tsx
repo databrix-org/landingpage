@@ -41,7 +41,7 @@ export const WaitlistEmail = ({ firstName, lastName }: WaitlistEmailProps) => (
         />
         <Heading style={h1}>Willkommen auf der Warteliste von Databrix</Heading>
         <Text style={paragraph}>
-          Hallo {firstName} {lastName}
+          Hallo {firstName} {lastName},
         </Text>
         <Text style={paragraph}>
           Wir freuen uns über Ihr Interesse an Databrix. Sie erhalten

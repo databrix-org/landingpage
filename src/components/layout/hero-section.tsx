@@ -58,7 +58,7 @@ export default function HeroSection() {
               duration: 0.95,
               ease: [0.165, 0.84, 0.44, 1],
             }}
-            className="relative md:ml-[-10px] md:mb-[37px] text-[16vw] md:text-[110px] font-bold text-[#1E2B3A] leading-[1.1] tracking-[-2px] z-[100]"
+            className="relative md:ml-[-10px] md:mb-[37px] text-[12vw] md:text-[110px] font-bold text-[#1E2B3A] leading-[1.1] tracking-[-2px] z-[100]"
           >
             Ihr Katalysator <br />
             in <span className="text-[#407BBF]">Data Science.</span>
@@ -112,7 +112,7 @@ export default function HeroSection() {
               <Link
                 href="https://github.com/databrix-org"
                 target="_blank"
-                className="group rounded-full pl-[8px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
+                className="group rounded-full pl-[8px] pr-4 py-2 text-[13px] font-medium transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                 style={{
                   boxShadow:
                     "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
@@ -133,7 +133,7 @@ export default function HeroSection() {
             >
               <Link
                 href="/waitlist"
-                className="group rounded-full px-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#f5f7f9] text-[#1E2B3A] no-underline active:scale-95 scale-100 duration-75"
+                className="group rounded-full px-4 py-2 text-[13px] font-medium transition-all flex items-center justify-center bg-[#f5f7f9] text-[#1E2B3A] no-underline active:scale-95 scale-100 duration-75"
                 style={{
                   boxShadow: "0 1px 1px #0c192714, 0 1px 3px #0c192724",
                 }}
@@ -193,15 +193,7 @@ export default function HeroSection() {
           className="z-50 fixed top-0 right-[-2px] w-[80%] md:w-1/2 h-screen bg-[#c3e4ff]"
         ></motion.canvas>
       </div>
-
-      <div className="h-[60px] bg-[#1D2B3A] fixed bottom-0 z-40 w-full flex flex-row items-center justify-start gap-12 px-16">
-        {/* // justify-evenly */}
-        <p className="text-white/80 md:text-lg font-semibold md:leading-[60px] whitespace-nowrap flex flex-row">
-          Created by
-        </p>
-        <DHBWLogo className="h-8 opacity-80 text-white" />
-        <VotanLogo className="h-8 opacity-80 text-white" />
-      </div>
+          
     </AnimatePresence>
   );
 }

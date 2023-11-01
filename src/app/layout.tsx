@@ -4,6 +4,8 @@ import { cn } from "@/src/lib/utils";
 import "@/src/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
+import Link from "next/link";
+import {LegalFooter, LogoFooter} from "../components/layout/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -46,6 +48,7 @@ export default async function RootLayout({
       >
         {children}
         <Toaster />
+        <LogoFooter />
       </body>
     </html>
   );

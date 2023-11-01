@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { gradient } from "@/src/components/ui/Gradient";
 import { useEffect } from "react";
 import Waitlist from "@/src/components/features/waitlist";
+import Link from "next/link";
 
 export default function WaitlistFormSection() {
   useEffect(() => {
@@ -28,7 +29,7 @@ export default function WaitlistFormSection() {
           </filter>
           <rect width="100%" height="100%" filter="url(#noise)"></rect>
         </svg>
-        <main className="flex flex-col justify-center h-[90%] static md:fixed w-screen overflow-hidden grid-rows-[1fr_repeat(3,auto)_1fr] z-[100] pt-[30px] pb-[320px] px-4 md:px-20 md:py-0">
+        <main className="flex flex-col justify-center h-[90%] static md:fixed w-screen overflow-hidden grid-rows-[1fr_repeat(3,auto)_1fr] z-50 pt-[30px] pb-[320px] px-4 md:px-20 md:py-0">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -68,7 +69,7 @@ export default function WaitlistFormSection() {
           }}
           id="gradient-canvas"
           data-transition-in
-          className="z-50 fixed top-0 right-[-2px] w-[80%] md:w-1/2 h-screen bg-[#c3e4ff]"
+          className="z-30 fixed top-0 right-[-2px] w-[80%] md:w-1/2 h-screen bg-[#c3e4ff]"
         ></motion.canvas>
       </div>
     </AnimatePresence>
