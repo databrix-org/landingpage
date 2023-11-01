@@ -18,8 +18,8 @@ interface WaitlistEmailProps {
   lastName: string;
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
+const baseUrl = process.env.COMPANY_URL
+  ? `https://${process.env.COMPANY_URL}`
   : "";
 
 const companyName = process.env.COMPANY_NAME;
