@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Grounding colors */
+    --foreground: 217, 217, 217, 1;
+    --background: 242, 243, 245, 1;
+    --hoverground: 217, 217, 217, 0.5;
+
+    /* Text colors */
+    --standard: 26, 43, 59, 1;
+    --highlight: 64, 123, 191, 1;
+
+    /* Brand colors */
+    --primary: 220, 5, 45, 1;
+    --primary-transparent: 220, 5, 45, 0.5;
+
+    --secondary: 0, 0, 0, 1;
+    --secondary-transparent: 0, 0, 0, 0.5;
+
+    --tertiary: 101, 22, 27, 1;
+    --tertiary-transparent: 255, 255, 255, 0.5;
+
+    /* Call-to-Action colors */
+    --active: 13, 153, 255, 1;
+    --passive: 217, 217, 217, 1;
+
+    /* Destructive / Warning colors */
+    --destructive: 88, 101, 242, 1;
+
+    /* Object colors */
+    --skeleton: 217, 217, 217, 0.5;
+    --separator: 112, 112, 112, 0.3;
+  }
+
+  .dark {
+    /* Grounding colors */
+    --foreground: 112, 112, 112, 1;
+    --background: 0, 0, 0, 1;
+    --hoverground: 17, 17, 17, 1;
+
+    /* Text colors */
+    --standard: 112, 112, 112, 1;
+    --highlight: 217, 217, 217, 1;
+
+    /* Brand colors */
+    --primary: 220, 5, 45, 1;
+    --primary-transparent: 220, 5, 45, 0.5;
+
+    --secondary: 0, 0, 0, 1;
+    --secondary-transparent: 0, 0, 0, 0.5;
+
+    --tertiary: 101, 22, 27, 1;
+    --tertiary-transparent: 255, 255, 255, 0.5;
+
+    /* Call-to-Action colors */
+    --active: 13, 153, 255, 1;
+    --passive: 112, 112, 112, 1;
+
+    /* Destructive / Warning colors */
+    --destructive: 88, 101, 242, 1;
+
+    /* Object colors */
+    --skeleton: 217, 217, 217, 0.5;
+    --separator: 112, 112, 112, 0.3;
+  }
+
+  ::selection {
+    background: #407bbf;
+    color: #1a2b3b;
+  }
+
+  body {
+    @apply bg-background font-medium text-standard;
+  }
+}
+
+#gradient-canvas {
+  --gradient-color-1: #bde1ff;
+  --gradient-color-2: #6ca0f4;
+  --gradient-color-3: #e2d8ee;
+  --gradient-color-4: #94c8ff;
+}
