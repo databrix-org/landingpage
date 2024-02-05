@@ -110,16 +110,17 @@ export default function HeroSection() {
               }}
             >
               <Link
-                href="https://github.com/databrix-org"
+                href="http://193.196.53.107"
                 target="_blank"
-                className="group rounded-full pl-[8px] pr-4 py-2 text-[13px] font-medium transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
+                className="group rounded-full px-4 py-2 text-[13px] font-medium transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                 style={{
                   boxShadow:
                     "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
                 }}
               >
-                <GithubIcon className="w-5 h-5 rounded-full text-white flex items-center justify-center" />
-                Folgen auf Github
+                {/* <GithubIcon className="w-5 h-5 rounded-full text-white flex items-center justify-center" />
+                Folgen auf Github */}
+                App starten
               </Link>
             </motion.div>
             <motion.div
@@ -193,7 +194,6 @@ export default function HeroSection() {
           className="z-50 fixed top-0 right-[-2px] w-[80%] md:w-1/2 h-screen bg-[#c3e4ff]"
         ></motion.canvas>
       </div>
-          
     </AnimatePresence>
   );
 }

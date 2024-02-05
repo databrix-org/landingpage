@@ -5,7 +5,7 @@ import "@/src/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
-import {LegalFooter, LogoFooter} from "../components/layout/footer";
+import { LegalFooter, LogoFooter } from "../components/layout/footer";
 
 export const metadata: Metadata = {
   title: {
