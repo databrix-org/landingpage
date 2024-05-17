@@ -1,7 +1,11 @@
 "use client";
 
 import React from "react";
-import { DHBWLogo, MicrosoftStartupsLogo, VotanLogo } from "@/src/components/ui/logos";
+import {
+  DHBWLogo,
+  MicrosoftStartupsLogo,
+  VotanLogo,
+} from "@/src/components/ui/logos";
 import Link from "next/link";
 
 export function LogoFooter() {
